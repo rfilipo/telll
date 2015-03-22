@@ -1,0 +1,249 @@
+/* 
+Styles for mobile screen 320x480
+colors #FFFFFF, #000000, #0195DB, #2FB135, #D3222A, #181818 
+*/
+@font-face {
+font-family: 'Powerweld';
+font-style: normal;
+font-weight: normal;
+src: local('Powerweld'), url('../../css/Powerweld.woff') format('woff');
+}
+
+body {
+    font-family: arial;
+/*    background: #000;
+    color:#FFF;*/
+    margin:0px; 
+}
+
+/* links and buttons */
+a:link { color: #0195DB; }
+a:visited { color: #2FB135; }
+a:hover { color: #D3222A; }
+a:active { color: #181818; }
+
+a:link, a:visited, a:hover, a:active{
+text-decoration:none;
+}
+
+div#screen {
+  position:relative;
+  background-image:url("../images/screen_bg.jpg");
+  width: 1071px;
+  /* height: 800px;*/
+  margin: 0px auto;
+  /* padding-bottom: 24px; */
+}
+div#screen #screen_header{
+  background-image:url("../images/screen_header.jpg");
+  height: 322px;
+  width: 1071px;
+}
+div#screen #screen_header #title{
+  display:block;
+  width: 700px;
+  font-family: 'Powerweld';
+  font-size:24px;
+  margin-left: 31px;
+  padding-top: 25px;
+  color:#888;
+}
+
+.status{
+   float:right;
+   margin-right:10px;
+   
+}
+
+div#screen #screen_frame{
+  margin-top:-30px;
+  position:relative;
+}
+#stage {
+     position: absolute;
+     z-index: 2;
+     top: 0px;
+     left: 30px;
+     width: 1020px;
+     height: 562px; 
+     overflow: hidden;
+     /* background-color: #c0c0c0;
+     border:1px solid #FFF;
+     */
+     display:none;
+}
+
+#stage div {
+font-size: 28px;
+color: #C0C0C0;
+text-align: justify;
+margin: 100px;
+}
+.tw{color:#FFFFFF;}
+.tk{color:#000000;}
+.tb{color:#0195DB;}
+.tg{color:#2FB135;}
+.tr{color:#D322AA;}
+
+.telll_logo{
+    font-family:'Powerweld';
+    font-size: 22px;
+    color:#FFFFFF;
+}
+
+#bgblack {
+     width: 1071px;
+     height: 800px; 
+     overflow: hidden;
+     background-color: #000;
+}
+
+#black_mask {
+position: absolute;
+top: 425px;
+left: 0;
+width: 1071px;
+height: 70px;
+background-color: #000;
+}
+
+#ad-menu {
+    position: absolute;
+    z-index: 3000;
+    top: 61px;
+    left: 57px;
+    /*width: 320px;
+    height: 100px;*/
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #c0c0c0;
+    display: none;
+}
+
+
+iframe#player1 {
+width: 1008px;
+height: 562px;
+margin-left: 34px;
+}
+
+div.spot_frame {
+   position:absolute;
+   top:100px;
+   left:100px;
+   width:200px;
+   height:200px;
+   opacity: 0.6;
+   cursor:pointer;
+   z-index:2000;
+}
+
+div.spot_frame img.spot {
+   width:200px;
+   height:200px;
+   margin: 0px;
+}
+
+div#scroll{
+  float:left;
+  width:500px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+#scroll .ui-slider-range { background: #ef2929; }
+#scroll .ui-slider-handle { border-color: #ef2929; }
+div#mobile {
+/*
+  position: absolute;
+  z-index: 20000;
+  top: 0px;
+  left: 750px;
+*/
+
+  background-image:url("../images/iPhone_5_portrait.png");
+  height: 600px;
+  width: 346px;
+  padding: 210px 131px;
+  margin-left:1400px;
+}
+.mobile_overlay {
+  display:none;
+}
+
+iframe#mobile1 {
+  overflow:hidden;
+}
+
+#panel_frame{
+margin-left: 94px;
+width: 934px;
+}
+#panel img {
+    float:left;
+    margin:20px 5px 20px 20px;
+    background-color:#fff;
+    padding:2px;
+    border:1px solid #ccc;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    cursor: pointer;
+    width:80px;
+    height:60px;
+}
+div#controls {
+  position: absolute;
+  z-index: 8;
+  top: 440px;
+  left: 60px;
+  height: 26px;
+  width: 686px;
+  background: #2f2f2f;
+}
+div#play_pause{
+height: 34px;
+width: 34px;
+float: left;
+margin-left: -72px;
+margin-top: 36px;
+}
+
+div#play_pause.play{
+background-image: url("../images/controls.jpg");
+background-repeat: no-repeat;
+background-position: -155px -7px;
+}
+div#play_pause.pause{
+background-image: url("../images/controls.jpg");
+background-repeat: no-repeat;
+background-position: -213px -7px;
+}
+
+button {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 8px 18px 10px;
+  line-height: 1;
+  color: #fff;
+  background: #345;
+  border: 0;
+  border-radius: 4px;
+  margin-left: 0.75em;
+}
+
+p {
+  display: inline-block;
+  margin-left: 10px;
+  color: #255;
+}
+
+#footer {
+    background-image: url("../..//img/footer.jpg");
+    background-repeat: repeat;
+    width:100%;
+    height:18px;
+    margin-top: 30px;
+}
+
+

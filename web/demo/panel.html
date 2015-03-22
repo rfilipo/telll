@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>telll.me version 0.010 - experimental</title>
+<script>
+var VERSION = "0.010 - experimental";
+
+/* we need to download the json movie data from telll : TODO */
+var spots = [
+{
+// RollsRoyce Spot data 
+id:0,
+thumb:"images/spots/rolls_royce_80x60.jpg",
+media:"default",
+media_type:"gif",
+points:[{x:23,y:45,t:7},{x:23,y:45,t:10}],
+toshow: true,
+links:[
+   {
+   id:"rolls_royce_001",
+   thumb:"images/spots/rolls_royce_64x36.jpg",
+   title:"Rolls Royce Commercial", 
+   description:"New Rolls Royce Wraith Coupe HD Sexy First Commercial Sexy 2015 Carjam TV HD Car TV Show",
+   link:"https://www.youtube.com/watch?v=Squv4KI751w" 
+   },
+   {
+   id:"rolls_royce_002",
+   thumb:"images/spots/rolls_royce_64x36.jpg",
+   title:"Rolls Royce Rental 1", 
+   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel interdum magna ...",
+   link:"http://www.miamiluxuryautorent.com/english/rent/?v=13114" 
+   },
+   {
+   id:"rolls_royce_003",
+   thumb:"images/spots/rolls_royce_64x36.jpg",
+   title:"Rolls Royce Rental 2", 
+   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel interdum magna ...",
+   link:"http://br.autoeurope.com/go/aluguel-rolls-royce/" 
+   }
+]},{
+// Daniel Craig Spot data 
+id:1,
+thumb:"images/spots/daniel_craig_80x60.jpg",
+media:"default",
+media_type:"gif",
+points:[{x:23,y:45,t:12},{x:23,y:45,t:15}],
+toshow: true,
+links:[
+   {
+   id:"daniel_craig_001",
+   thumb:"images/spots/daniel_craig_64x36.jpg",
+   title:"Daniel Craig - IMDB", 
+   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel interdum magna ...",
+   link:"http://www.imdb.com/name/nm0185819/" 
+   },
+]},{
+// Eva Green Spot data 
+id:2,
+thumb:"images/spots/eva_green_80x60.jpg",
+media:"default",
+media_type:"gif",
+points:[{x:23,y:45,t:16},{x:23,y:45,t:19}],
+toshow: true,
+links:[
+   {
+   id:"eva_green_001",
+   thumb:"images/spots/eva_green_64x36.jpg",
+   title:"Eva Green - IMDB", 
+   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel interdum magna ...",
+   link:"http://www.imdb.com/name/nm1200692" 
+   },
+]},{
+// Tiffany Spot data 
+id:3,
+thumb:"images/spots/tiffany_80x60.jpg",
+media:"default",
+media_type:"gif",
+points:[{x:23,y:45,t:19},{x:23,y:45,t:21}],
+toshow: true,
+links:[
+   {
+   id:"tifanny_001",
+   thumb:"images/spots/tiffany_64x36.jpg",
+   title:"Tiffany", 
+   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel interdum magna ...",
+   link:"http://www.tiffany.com/Shopping/Default.aspx?mcat=148204" 
+   },
+]},{
+// Bahamas Spot data 
+id:4,
+thumb:"images/spots/bahamas_80x60.jpg",
+media:"default",
+media_type:"gif",
+points:[{x:23,y:45,t:22},{x:23,y:45,t:25}],
+toshow: true,
+links:[
+   {
+   id:"bahamas_001",
+   thumb:"images/spots/bahamas_64x36.png",
+   title:"Bahamas - Tourism Comercial", 
+   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel interdum magna ...",
+   link:"https://vimeo.com/58748266" 
+   },{
+   id:"bahamas_002",
+   thumb:"images/spots/bahamas_64x36.png",
+   title:"Luxury Villa Rentals", 
+   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel interdum magna ...",
+   link:"http://www.luxuryretreats.com/destinations/caribbean/bahamas/?src=paid_ggna_caribbean-bahamas_rentalsbmm&c3api=8676,63319676108,%2Bbahamas%20%2Brental&gclid=CLvJh8XiyMMCFWsV7AodVUQAOg" 
+   },
+]},{
+// Helicopter Spot data 
+id:5,
+thumb:"images/spots/helicopter_80x60.jpg",
+media:"default",
+media_type:"gif",
+points:[{x:23,y:45,t:28},{x:23,y:45,t:31},{x:23,y:45,t:234}],
+toshow: true,
+links:[
+   {
+   id:"viator_001",
+   thumb:"images/spots/helicopter_64x36.jpg",
+   title:"Helicopter Tour", 
+   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel interdum magna ...",
+   link:"http://www.viator.com/tours/Miami/Miami-Helicopter-Tour/d662-5221HELI" 
+   }
+]},{
+// Yatch Spot data 
+id:6,
+thumb:"images/spots/hidro_plane_80x60.jpg",
+media:"default",
+media_type:"gif",
+points:[{x:23,y:45,t:25},{x:23,y:45,t:27},{x:23,y:45,t:234}],
+toshow: true,
+links:[
+   {
+   id:"bbookings_001",
+   thumb:"images/spots/hidro_plane_64x36.jpg",
+   title:"Yacht Charter - 1", 
+   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel interdum magna ...",
+   link:"http://www.boatbookings.com/yachting_content/bahamas_yacht_charter.php" 
+   },{
+   id:"bbookings_002",
+   thumb:"images/spots/hidro_plane_64x36.jpg",
+   title:"Yacht Charter - 2", 
+   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel interdum magna ...",
+   link:"http://www.charterworld.com/?sub=bahamas-yacht-charter" 
+   }
+]},{
+// Atlantis Spot data 
+id:7,
+thumb:"images/spots/hotel_bahamas_80x60.jpg",
+media:"default",
+media_type:"gif",
+points:[{x:23,y:45,t:32},{x:23,y:45,t:31},{x:23,y:45,t:234}],
+toshow: true,
+links:[
+   {
+   id:"atlantis_001",
+   thumb:"images/spots/hotel_bahamas_80x60.jpg",
+   title:"Hotel Atlantis Bahamas", 
+   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel interdum magna ...",
+   link:"http://www.tripadvisor.com.br/Hotel_Review-g147417-d507175-Reviews-Atlantis_Royal_Towers-Paradise_Island_New_Providence_Island_Bahamas.html" 
+   }
+]},{
+// Armani Spot data 
+id:8,
+thumb:"images/spots/armani_2_80x60.jpg",
+media:"default",
+media_type:"gif",
+points:[{x:23,y:45,t:36},{x:23,y:45,t:35},{x:23,y:45,t:234}],
+toshow: true,
+links:[
+   {
+   id:"armani_001",
+   thumb:"images/spots/armani_2_80x60.jpg",
+   title:"Neiman Marcus- Armani", 
+   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel interdum magna ...",
+   link:"http://www.neimanmarcus.com/en-br/search.jsp?N=0&Ntt=armani+suits&_requestid=172548" 
+   }
+]},{
+// Ferretti Spot data 
+id:9,
+thumb:"images/spots/lancha_80x60.jpg",
+media:"default",
+media_type:"gif",
+points:[{x:23,y:45,t:41},{x:23,y:45,t:234},{x:23,y:45,t:234}],
+toshow: true,
+links:[
+   {
+   id:"ferretti_001",
+   thumb:"images/spots/lancha_64x36.jpg",
+   title:"Ferretti - Comercial", 
+   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel interdum magna ...",
+   link:"https://www.youtube.com/watch?v=ztf5B-wEVlw" 
+   }
+]},{
+// Mondeo Spot data 
+id:10,
+thumb:"images/spots/ford_mondeo_80x60.jpg",
+media:"default",
+media_type:"gif",
+points:[{x:23,y:45,t:46.5},{x:23,y:45,t:234},{x:23,y:45,t:234}],
+toshow: true,
+links:[
+   {
+   id:"mondeo_001",
+   thumb:"images/spots/ford_mondeo_64x36.jpg",
+   title:"Ford Mondeo - Commercial", 
+   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel interdum magna ...",
+   link:"https://www.youtube.com/watch?v=XM1ROXjui78" 
+   }
+]},{
+// Ray-ban Spot data 
+id:11,
+thumb:"images/spots/sun_glasses_80x60.jpg",
+media:"default",
+media_type:"gif",
+points:[{x:23,y:45,t:48},{x:23,y:45,t:234},{x:23,y:45,t:234}],
+toshow: true,
+links:[
+   {
+   id:"ray-ban_001",
+   thumb:"images/spots/sun_glasses_64x36.jpg",
+   title:"Ray-Ban", 
+   description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel interdum magna ...",
+   link:"http://www.ray-ban.com/usa/sunglasses/clp" 
+   }
+]}];
+
+var my_movie = {
+id:0,
+title:"Cassino Royale - demo",
+url:"https://player.vimeo.com/video/118517903?autoplay=1&badge=0;player_id=player1&byline=0&portrait=0&title=0api=1&",
+player:"vimeo",
+spots:spots
+};
+//console.log(my_movie);
+</script>
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
+<link href="js/jquery-ui-1.11.1/jquery-ui.min.css" rel="stylesheet" type="text/css">
+<link href="css/player.css" rel="stylesheet" type="text/css">
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
+<script src="//f.vimeocdn.com/js/froogaloop2.min.js"></script>
+<script src="js/jquery.popupoverlay.js"></script>
+<script src="js/player.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div id="screen">
+
+  <div id="screen_header">
+    <div id="title">Cassino Royale - DEMO</div>
+    <div class="status">000</div>
+  </div>
+  <div id="screen_frame">
+    <iframe id="player1" src="//player.vimeo.com/video/118517903?autoplay=1&badge=0;player_id=player1&byline=0&portrait=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>
+    <div id="black_mask"></div>
+    <div id="stage"><div>Loading <span class="telll_logo">te<span class="tr">l</span><span class="tg">l</span><span class="tb">l</span></span>, please wait a little ... <br><br><br><br>Try to click the spots moving on scene. It's showing the products you can click.<br><br> You also can click in the images in spot's gallery.<br> It will show the mobile with the links to open.</div>
+<!--
+         <div id="bgblack">
+          <div id="ad">
+              <img src="images/kob_logo.png">
+          </div>
+          <div id="ad-menu">
+              <li class="open">Open store</li>
+              <li class="share">Share on Facebook</li>
+              <li class="comment">Comment here</li>
+          </div>
+         </div>
+-->
+
+     </div>
+     <div id=panel_frame>
+     <div id="play_pause" class="play"></div>
+	<!-- panel -->
+	<div id="panel">
+
+	</div>
+	<script>
+        $(document).ready(function(){
+        
+
+	});
+	</script>
+	</div>
+
+<!--
+<div id="controls">
+    <div id="play_pause"></div>
+    <div id="scroll"></div>
+    <div id="audio"></div>
+    <div id="zoom"></div>
+</div>
+-->
+
+ </div> 
+</div>
+
+<div class="mobile_overlay">
+<div id="mobile">
+<iframe id="mobile1" src="mobile.html" width="320" height="568" frameborder="0" scrolling="no"></iframe>
+</div>
+</div>
+<script>
+$( document ).ready(function() {
+    $("#mobile").popup();
+});
+</script>
+
+<div id="footer"></div>
+</body>
+</html>

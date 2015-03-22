@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="js/jquery-ui-1.11.3/external/jquery/|js/Kob/|js/jquery-ui-1.11.3/|js/t/|js/" kind="src" path=""/>
+	<classpathentry excluding="jquery-ui-1.11.3/external/jquery/|Kob/|jquery-ui-1.11.3/|t/" kind="src" path="js"/>
+	<classpathentry excluding="external/jquery/" kind="src" path="js/jquery-ui-1.11.3"/>
+	<classpathentry kind="src" path="js/jquery-ui-1.11.3/external/jquery"/>
+	<classpathentry kind="src" path="js/Kob"/>
+	<classpathentry kind="src" path="js/t"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

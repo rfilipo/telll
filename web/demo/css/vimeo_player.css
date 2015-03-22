@@ -1,0 +1,128 @@
+body {
+    overflow: hidden;
+    color: white;
+}
+
+#stage {
+     position: absolute;
+     z-index: 2;
+     top: 49px;
+     left: 57px;
+     width: 692px;
+     height: 415px; 
+     overflow: hidden;
+     background-color: #fff;
+}
+
+#bgblack {
+     width: 692px;
+     height: 415px; 
+     overflow: hidden;
+     background-color: #000;
+}
+
+#ad-menu {
+    position: absolute;
+    z-index: 3000;
+    top: 61px;
+    left: 57px;
+    /*width: 320px;
+    height: 100px;*/
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #c0c0c0;
+    display: none;
+}
+
+div#screen {
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  background-image:url("../images/screen.png");
+  height: 570px;
+  width: 686px;
+  padding: 49px 57px;
+}
+
+iframe#player1 {
+  z-index: 1;
+  width: 692px;
+  height: 415px
+}
+
+div#controls {
+  position: absolute;
+  z-index: 8;
+  top: 440px;
+  left: 60px;
+  height: 26px;
+  width: 686px;
+  background: #2f2f2f;
+}
+div#play_pause{
+  background-image:url("../images/controls.jpg");
+  background-repeat:no-repeat;
+  background-position:-156px -11px;
+  height: 26px;
+  width: 26px;
+  float:left;
+}
+div#scroll{
+  float:left;
+  width:500px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+#scroll .ui-slider-range { background: #ef2929; }
+#scroll .ui-slider-handle { border-color: #ef2929; }
+div#mobile {
+  position: absolute;
+  z-index: 2;
+  top: -80px;
+  left: 750px;
+  background-image:url("../images/iPhone_5_portrait.png");
+  height: 600px;
+  width: 346px;
+  padding: 210px 131px;
+}
+iframe#mobile1 {
+  overflow:hidden;
+}
+
+div#panel {
+z-index: 10;
+color: #000;
+position: absolute;
+top: 360px;
+left: 80px;
+width: 638px;
+height: 90px;
+}
+
+#panel .frame-icon img {
+  width:80px;
+  height:60px;
+}
+
+button {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 8px 18px 10px;
+  line-height: 1;
+  color: #fff;
+  background: #345;
+  border: 0;
+  border-radius: 4px;
+  margin-left: 0.75em;
+}
+
+p {
+  display: inline-block;
+  margin-left: 10px;
+  color: #255;
+}
+
+
