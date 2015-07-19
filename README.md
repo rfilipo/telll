@@ -1,6 +1,6 @@
-telll DEMO
- release: Shanon
- version 0.010 
+#telll DEMO
+ - release: Shanon
+ - version 0.010 
  
  telll is a web movie facility integrating mobile and user's network
  
