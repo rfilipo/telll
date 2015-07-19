@@ -1,6 +1,9 @@
-telll
+telll DEMO
+ release: Shanon
  version 0.010 
+ 
  telll is a web movie facility integrating mobile and user's network
+ 
     Copyright (C) 2015  Monsenhor <monsenhor@cpan.org>
 
     This program is free software: you can redistribute it and/or modify
@@ -17,11 +20,8 @@ telll
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-Just web and demo
-Some infra and model beginings at server and player
 
-
-What ?
+## What ?
  
 telll.me   is an app that syncs contents, advertisements,links for e-
 commerce and social medias with invisible layers behind what is being
@@ -36,47 +36,62 @@ at . All these infos are hidden in these invisible layers.
 Basically there are two layers. One for advertisements and
 informations and the second for social interaction.
 This opens a whole new world of advertising possibilities.
-Why ? 
+
+##Why ? 
+
 With the increasing world of video on demand, advertisements will
 loose their commercial breaks and this will be a solution for the loss of
 that media time .
+
 With  telll.me  , all internet content , even photos will have extra
 dimensions with these layers .
 Now videos and photos online will be able to have lots of interactions
 on these layers hidden including shopping online.
+
 The good thing about it is , these layers are not invasive because they
 can only be visible by clicking on top of any given image on the monitor of
 your device or you can assign a second device such as a smartphone or
 tablet to receive these hidden layers.
+
 This way you can see all the info without the necessity of stopping
 the video on your smart TV to click on an image. Your secondary device
 will receive the infos in real time synchronised with the content being
 watched on the primary device .
+
 telll.me  will generate curiosity. People love to browse, they will
 want to see the hidden layers of content behind every video or photo and it
-will be a new environment for social interactions.  Who ?
+will be a new environment for social interactions.  
+
+##Who ?
+
 Consumers , advertising agencies, film producers will benefit
 with  telll.me
- Films producers will be able now to generate extra revenue from
+ 
+Films producers will be able now to generate extra revenue from
 their investments before the film is being released and also long after. 
- Now old movies can have new advertisements , infos on
+
+Now old movies can have new advertisements , infos on
 actors,scenes etc... and also social networking. 
+
 You can use telll.me on live shows that have synchronisation with
 events such as lights,videos and music. Now your online device will receive
 info during the performance . Example: On a particular song you can post
 “on the count of 4 every body shouts Hey Hey” .“4,3,2,1 HEY HEY !!” and
 everybody will be in sync shouting Hey Hey .
+
 The social media network layer in telll.me will be anther cool
 media because now you can write a comment on a particular scene of a
 movie and post on your social network. That also works with photos.
+
 Ex: While watching a movie there is a scene of a beautiful beach and
 now you can write on the image and share it . Now all your photos can
 have comments and links hidden in telll.me and only people allowed will
 have access to these posts even if these photos are on Instagram or FB
 they can have these hidden layers.
+
 Your photos and videos can have advertising revenue if they link to a
 purchase or advertisement.
 
-Work:
+## Work:
 
 [![Stories in Ready](https://badge.waffle.io/rfilipo/telll.png?label=ready&title=Ready)](http://waffle.io/rfilipo/telll)
